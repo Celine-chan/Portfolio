@@ -1,0 +1,71 @@
+/* -------- photo -------- */
+
+body {
+    margin: 0 auto;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.blob-one,
+.blob-one--animated {
+    height: 300px;
+    width: 250px;
+}
+
+.blob-one {
+    border-radius: 70% 50% 70% 50%/80% 60% 60% 40%;
+}
+
+.blob-one--animated {
+    animation: move-one 5s linear infinite alternate;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexchild {
+    text-align: center;
+}
+
+@keyframes move-one {
+    0% {
+        border-radius: 70% 50% 70% 50%/80% 60% 60% 40%;
+    }
+
+    33% {
+        border-radius: 48% 52% 52% 48%/44% 59% 41% 56%;
+    }
+
+    66% {
+        border-radius: 52% 48% 57% 43%/56% 49% 51% 44%;
+    }
+
+    100% {
+        border-radius: 70% 50% 70% 50%/80% 60% 60% 40%;
+    }
+}
+
+/* -------- présentation -------- */
+
+.backIntro {
+    background-image: url('../img/keyboard.jpg');
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 46rem;
+}
+
+.textIntro {
+    color: white;
+    font-family: 'Cinzel', serif;
+}
