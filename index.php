@@ -23,35 +23,170 @@
 
 <body>
 
-    <div class="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
 
-    </div>
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
 
-    <div class="backIntro">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes Réalisations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="backIntro mt-4">
 
         <section class="flexbox">
             <div class="flexchild mx-auto mt-5 row">
-                <figure>
-                    <div class="row">
-                        <div class="col-8">
-                            <p><img src="assets/img/Photo_Celine_Louvel.jpg" class="blob-one--animated" alt="photo Céline Louvel"></p>
+                <figure class="marginFig">
+                    <div class="row container">
+                        <div class="col-6">
+                            <p><img src="assets/img/Photo_Celine_Louvel.jpg" class="blob-one--animated marginImg" alt="photo Céline Louvel"></p>
                         </div>
-                        <div class="col-4 mt-5">
-                            <p><i class="fas fa-code"></i> Développeuse web et web mobile en formation. <i class="fas fa-code"></i></p>
-                            <p><i class="fas fa-exclamation-circle"></i> En recherche d'alternance Conception et développement d'applications.</p>
+                        <div class="col-6 mt-5 textImg">
+                            <h1 class="h1Text"><i class="fas fa-code"></i> Développeuse web et web mobile en formation <i class="fas fa-code"></i></h1>
+                            <h2 class="mt-5 h2Text"><i class="fas fa-exclamation-circle"></i> En recherche d'alternance Conception et développement d'applications du 26 avril 2021 au 3 mai 2022</h2>
                         </div>
                     </div>
                 </figure>
             </div>
         </section>
 
-        <p class="justify-content-center container textIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum</p>
+        <p class="justify-content-center text-center container textIntro mt-5">Intéressée depuis quelques années aux langages de programmation ,
+            J’ai depuis intégré la formation de développeuse web et web mobile à l’école La Manu du Havre en septembre 2020 et ce,
+            jusqu’en mars 2021.</p>
 
     </div>
+
+    <div class="myWork mt-5 text-center">
+
+        <div>
+            <img src="assets/img/web.svg" alt="web" class="logoWeb mx-auto">
+        </div>
+
+        <h2 class="text-dark mb-5">Mes Réalisations</h2>
+
+
+        <main class=" container page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title cardTitle">Kansai no Bouken</h2>
+                    <p class="copy">Site réalisé pour le passage du titre de développeuse web et web mobile - En cours</p>
+                    <button class="btn">Allez sur le site</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title cardTitle">Sword Shop</h2>
+                    <p class="copy">Site WordPress réalisé en formation</p>
+                    <button class="btn">Allez sur le site</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title cardTitle">projet en cours</h2>
+                    <p class="copy">Bientôt disponible</p>
+                    <button class="btn">Allez sur le site</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title cardTitle">projet en cours</h2>
+                    <p class="copy">Bientôt disponible</p>
+                    <button class="btn">Allez sur le site</button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="otherWork mt-5 text-center">
+
+        <h3 class="text-dark">Autres petites réalisations...</h3>
+
+    </div>
+
+    <div class="skills mt-5 text-center">
+
+        <h2 class="text-dark">Langages informatiques</h2>
+
+        <div class="d-flex">
+            <div class="row">
+                <img src="assets/img/html-5.svg" alt="html5" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/css.svg" alt="css" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/javascript.svg" alt="javascript" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/php.svg" alt="php" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/bootstrap.svg" alt="bootstrap" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/wordpress.svg" alt="wordpress" class="logoLanguages">
+            </div>
+            <div class="row">
+                <img src="assets/img/visual-studio.svg" alt="visualStudioCode" class="logoLanguages">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact mt-5 text-center">
+
+        <h2 class="text-dark">Contact</h2>
+
+        <form class="col-6 container">
+            <div class="form-outline mb-4">
+                <input type="text" id="lastname" class="form-control" />
+                <label class="form-label" for="lastname">Nom</label>
+            </div>
+
+            <div class="form-outline mb-4">
+                <input type="text" id="firstname" class="form-control" />
+                <label class="form-label" for="firstname">Prénom</label>
+            </div>
+
+            <div class="form-outline mb-4">
+                <input type="email" id="email" class="form-control" />
+                <label class="form-label" for="email">E-mail</label>
+            </div>
+
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="message" rows="4"></textarea>
+                <label class="form-label" for="message">Votre Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
 
 
 
@@ -59,6 +194,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+    <!-- js -->
+    <script type="text/javascipt" src="assets/js/script.js"></script>
 </body>
 
 </html>
