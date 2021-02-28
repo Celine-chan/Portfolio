@@ -25,6 +25,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">Louvel Céline</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -50,25 +51,19 @@
         </div>
     </nav>
 
-    <div class="backIntro mt-4">
+    <div class="backIntro">
 
-        <section class="flexbox">
-            <div class="flexchild mx-auto mt-5 row">
-                <figure class="marginFig">
-                    <div class="row container">
-                        <div class="col-6">
-                            <p><img src="assets/img/Photo_Celine_Louvel.jpg" class="blob-one--animated marginImg" alt="photo Céline Louvel"></p>
-                        </div>
-                        <div class="col-6 mt-5 textImg">
-                            <h1 class="h1Text"><i class="fas fa-code"></i> Développeuse web et web mobile en formation <i class="fas fa-code"></i></h1>
-                            <h2 class="mt-5 h2Text"><i class="fas fa-exclamation-circle"></i> En recherche d'alternance Conception et développement d'applications du 26 avril 2021 au 3 mai 2022</h2>
-                        </div>
-                    </div>
-                </figure>
+        <section class="container column">
+            <div class="divColumn">
+                <p><img src="assets/img/Photo_Celine_Louvel.jpg" class="blob-one--animated marginImg img-fluid mx-auto" alt="photo Céline Louvel"></p>
+                <h1 class="h1Text text-center textImg"><i class="fas fa-code"></i> Développeuse web et web mobile en formation <i class="fas fa-code"></i></h1>
+                <h2 class="mt-5 h2Text text-center"><i class="fas fa-exclamation-circle"></i> En recherche d'alternance Conception et développement d'applications du 26 avril 2021 au 3 mai 2022</h2>
             </div>
         </section>
 
-        <p class="justify-content-center text-center container textIntro mt-5">Intéressée depuis quelques années aux langages de programmation ,
+        <hr>
+
+        <p class="text-center container textIntro mt-5">Intéressée depuis quelques années aux langages de programmation ,
             J’ai depuis intégré la formation de développeuse web et web mobile à l’école La Manu du Havre en septembre 2020 et ce,
             jusqu’en mars 2021.</p>
 
@@ -122,34 +117,27 @@
 
     </div>
 
-    <div class="skills mt-5 text-center">
+    <div class="container skills mt-5">
 
-        <h2 class="text-dark">Langages informatiques</h2>
+        <h2 class="text-dark text-center">Langages informatiques</h2>
 
-        <div class="d-flex">
-            <div class="row">
-                <img src="assets/img/html-5.svg" alt="html5" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/css.svg" alt="css" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/javascript.svg" alt="javascript" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/php.svg" alt="php" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/bootstrap.svg" alt="bootstrap" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/wordpress.svg" alt="wordpress" class="logoLanguages">
-            </div>
-            <div class="row">
-                <img src="assets/img/visual-studio.svg" alt="visualStudioCode" class="logoLanguages">
-            </div>
+
+        <div class="row d-flex justify-content-center my-5">
+            <img src="assets/img/html-5.svg" alt="html5" class="logoLanguages ">
+            <img src="assets/img/css.svg" alt="css" class="logoLanguages mx-5">
+            <img src="assets/img/javascript.svg" alt="javascript" class="logoLanguages">
         </div>
 
+        <div class="row d-flex justify-content-center mb-5">
+            <img src="assets/img/php.svg" alt="php" class="logoLanguages me-5">
+            <img src="assets/img/mysql.svg" alt="mysql" class="logoLanguages">
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <img src="assets/img/bootstrap.svg" alt="bootstrap" class="logoLanguages">
+            <img src="assets/img/wordpress.svg" alt="wordpress" class="logoLanguages mx-5">
+            <img src="assets/img/visual-studio.svg" alt="visualStudioCode" class="logoLanguages">
+        </div>
     </div>
 
     <div class="contact mt-5 text-center">
