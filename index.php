@@ -61,19 +61,25 @@
             </div>
         </section>
 
-        <hr>
+    </div>
 
-        <p class="text-center container textIntro mt-5">Intéressée depuis quelques années aux langages de programmation ,
+    <div class="container">
+        <p class="text-center textIntro mt-5">Intéressée depuis plusieurs années aux langages de programmation ,
             J’ai depuis intégré la formation de développeuse web et web mobile à l’école La Manu du Havre en septembre 2020 et ce,
             jusqu’en mars 2021.</p>
+        <p class="text-center textIntro">Grâce à ma formation, j'ai pu acquérir une expérience significative dans l'étude des langages informatiques.
+            Je souhaite donc pouvoir mettre en pratique le contenu de mes connaissances en intégrant une alternance pour le titre professionnel de concepteur et développeur d'application.</p>
 
+        <p class="text-center container textIntro mt-3">N'hésitez pas à télécharger mon cv pour plus d'informations sur mon parcours :
+        <p class="d-flex justify-content-center container textIntro"><a href="assets/img/celineLouvel.pdf"><img src="assets/img/cv.svg" alt="Louvel Céline CV" class="logocv"></a></p>
+        </p>
     </div>
 
     <div class="myWork mt-5 text-center">
 
-        <div>
+        <!-- <div>
             <img src="assets/img/web.svg" alt="web" class="logoWeb mx-auto">
-        </div>
+        </div> -->
 
         <h2 class="text-dark mb-5">Mes Réalisations</h2>
 
@@ -90,7 +96,7 @@
                 <div class="content">
                     <h2 class="title cardTitle">Sword Shop</h2>
                     <p class="copy">Site WordPress réalisé en formation</p>
-                    <button class="btn">Allez sur le site</button>
+                    <a class="btn" href="http://wp-lhp5-clouvel.manusien-ecolelamanu.fr/" target="_blank">Allez sur le site</a>
                 </div>
             </div>
             <div class="card">
@@ -113,7 +119,9 @@
 
     <div class="otherWork mt-5 text-center">
 
-        <h3 class="text-dark">Autres petites réalisations...</h3>
+        <h3 class="text-dark">Autres réalisations...</h3>
+
+        <p class="mt-5">Prochainement...</p>
 
     </div>
 
@@ -123,28 +131,28 @@
 
 
         <div class="row d-flex justify-content-center my-5">
-            <img src="assets/img/html-5.svg" alt="html5" class="logoLanguages ">
-            <img src="assets/img/css.svg" alt="css" class="logoLanguages mx-5">
-            <img src="assets/img/javascript.svg" alt="javascript" class="logoLanguages">
+            <img src="assets/img/html-5.svg" alt="html5" class="logoLanguages" title="HTML 5">
+            <img src="assets/img/css.svg" alt="css" class="logoLanguages mx-5" title="CSS 3">
+            <img src="assets/img/javascript.svg" alt="javascript" class="logoLanguages" title="JavaScript">
         </div>
 
         <div class="row d-flex justify-content-center mb-5">
-            <img src="assets/img/php.svg" alt="php" class="logoLanguages me-5">
-            <img src="assets/img/mysql.svg" alt="mysql" class="logoLanguages">
+            <img src="assets/img/php.svg" alt="php" class="logoLanguages me-5" title="PHP">
+            <img src="assets/img/mysql.svg" alt="mysql" class="logoLanguages" title="MySQL">
         </div>
 
         <div class="row d-flex justify-content-center">
-            <img src="assets/img/bootstrap.svg" alt="bootstrap" class="logoLanguages">
-            <img src="assets/img/wordpress.svg" alt="wordpress" class="logoLanguages mx-5">
-            <img src="assets/img/visual-studio.svg" alt="visualStudioCode" class="logoLanguages">
+            <img src="assets/img/bootstrap.svg" alt="bootstrap" class="logoLanguages" title="Bootstrap">
+            <img src="assets/img/wordpress.svg" alt="wordpress" class="logoLanguages mx-5" title="Worpress">
+            <img src="assets/img/visual-studio.svg" alt="visualStudioCode" class="logoLanguages" title="VSCode">
         </div>
     </div>
 
-    <div class="contact mt-5 text-center">
+    <div class="contact mt-5 text-center pb-5">
 
-        <h2 class="text-dark">Contact</h2>
+        <h2 class="text-light pt-5">Formulaire de contact</h2>
 
-        <form class="col-6 container">
+        <form class="col-6 container mt-5">
             <div class="form-outline mb-4">
                 <input type="text" id="lastname" class="form-control" />
                 <label class="form-label" for="lastname">Nom</label>
@@ -165,18 +173,22 @@
                 <label class="form-label" for="message">Votre Message</label>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
 
     </div>
 
 
+    <footer class="bg-light text-center text-white">
+        <div class="container d-flex justify-content-center p-4 mb-4 pb-0">
+            <a href="https://github.com/Celine-chan"><img src="assets/img/github.svg" alt="github" class="logofooter me-5"></a>
+            <a href="https://www.linkedin.com/in/c%C3%A9line-louvel/"><img src="assets/img/linkedin.svg" alt="linkedin" class="logofooter"></a>
+        </div>
 
-
-
-
-
-
+        <div class="text-center p-3" style="background-color: black;">
+            © 2021 Louvel Céline
+        </div>
+    </footer>
 
     <!-- bootstrap v5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

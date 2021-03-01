@@ -88,10 +88,9 @@
 } */
 
 .textIntro {
-    color: white;
+    color: black;
     font-family: 'Cinzel', serif;
     font-size: 1.3rem;
-    text-shadow: black 1px 1px;
 }
 
 .textImg {
@@ -107,11 +106,9 @@
     font-family: 'Cinzel', serif;
 }
 
-hr{
-    width: 15rem;
-    background-color: white;
-    margin: auto;
-    margin-top: 2rem;
+.logocv{
+    height: 5rem;
+    width: auto;
 }
 
 /* .marginImg{
@@ -356,6 +353,33 @@ body {
 }
 
 .logoLanguages:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* -------- contact -------- */
+
+.contact{
+    background-image: url('../img/northern-lights.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-outline{
+    background-color: white;
+}
+
+/* -------- footer -------- */
+
+.logofooter {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.logofooter:hover{
     transform: scale(1.2);
     transition: 0.5s;
 }
