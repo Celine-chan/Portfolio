@@ -66,6 +66,10 @@
 
 /* -------- présentation -------- */
 
+nav{
+    background-color: #160D27;
+}
+
 .nameTitle{
     font-family: 'DotGothic16', sans-serif;
     font-size: 1.5rem;
@@ -73,6 +77,12 @@
 
 .fontNav{
     font-family: 'Shippori Mincho', serif;
+}
+
+.fontNav:hover{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .titleh2{
@@ -402,4 +412,3 @@ body {
     transform: scale(1.2);
     transition: 0.5s;
 }
-

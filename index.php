@@ -31,9 +31,9 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand nameTitle" href="#">Louvel Céline</a>
+            <a class="navbar-brand nameTitle ms-5" href="#">Louvel Céline</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -42,7 +42,7 @@
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fontNav" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link fontNav" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fontNav" href="#presAnchor">Présentation</a>
@@ -95,12 +95,7 @@
 
     <div class="myWork mt-5 text-center">
 
-        <!-- <div>
-            <img src="assets/img/web.svg" alt="web" class="logoWeb mx-auto">
-        </div> -->
-
-        <h2 class="text-dark mb-5 titleh2">Mes Réalisations</h2>
-
+        <h2 class="text-dark mt-5 mb-5 titleh2">Mes Réalisations</h2>
 
         <main class=" container page-content">
             <div class="card cardProject">
@@ -155,7 +150,7 @@
 
     <div class="container skills mt-5">
 
-        <h2 class="text-dark text-center titleh2">Langages informatiques</h2>
+        <h2 class="text-dark mt-5 text-center titleh2">Langages informatiques</h2>
 
 
         <div class="row d-flex justify-content-center my-5">
@@ -188,7 +183,6 @@
         </div>
 
     </div>
-
 
     <footer class="bg-light text-center ">
         <p class="text-dark textIntro mt-3">Vous pouvez également faire un tour sur mon github ou bien sur mon compte Linkedin !</p>
