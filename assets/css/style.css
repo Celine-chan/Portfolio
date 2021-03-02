@@ -66,6 +66,20 @@
 
 /* -------- présentation -------- */
 
+.nameTitle{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1.5rem;
+}
+
+.fontNav{
+    font-family: 'Shippori Mincho', serif;
+}
+
+.titleh2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
 .backIntro {
     background-image: url('../img/keyboard.jpg');
     background-position: center;
@@ -170,7 +184,7 @@ body {
     }
 }
 
-.card {
+.cardProject {
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -184,12 +198,12 @@ body {
 }
 
 @media (min-width: 600px) {
-    .card {
+    .cardProject {
         height: 350px;
     }
 }
 
-.card:before {
+.cardProject:before {
     content: "";
     position: absolute;
     top: 0;
@@ -202,7 +216,7 @@ body {
     pointer-events: none;
 }
 
-.card:after {
+.cardProject:after {
     content: "";
     display: block;
     position: absolute;
@@ -216,28 +230,28 @@ body {
     transition: transform calc(var(--d) * 2) var(--e);
 }
 
-.card:nth-child(1):before {
+.cardProject:nth-child(1):before {
     background-image: url('../img/minohTemple.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.card:nth-child(2):before {
+.cardProject:nth-child(2):before {
     background-image: url('../img/swordShop.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.card:nth-child(3):before {
+.cardProject:nth-child(3):before {
     background-image: url('../img/programming.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.card:nth-child(4):before {
+.cardProject:nth-child(4):before {
     background-image: url('../img/programming.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -372,6 +386,11 @@ body {
     background-color: white;
 }
 
+.logoMail{
+    height: 4rem;
+    width: 4rem;
+}
+
 /* -------- footer -------- */
 
 .logofooter {
@@ -383,3 +402,4 @@ body {
     transform: scale(1.2);
     transition: 0.5s;
 }
+
