@@ -101,15 +101,17 @@
             <div class="card cardProject">
                 <div class="content">
                     <h2 class="title cardTitle">Kansai no Bouken</h2>
-                    <p class="copy">Site réalisé pour le passage du titre de développeuse web et web mobile - En cours</p>
-                    <button class="btn">Allez sur le site</button>
+                    <p class="copy">Site réalisé pour le passage du titre de développeuse web et web mobile</p>
+                    <p class="copy">En cours de construction</p>
+                    <a class="btn" href="http://kansainobouken.celinelouvel.fr/index.php">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
                 <div class="content">
                     <h2 class="title cardTitle">Sword Shop</h2>
                     <p class="copy">Site WordPress réalisé en formation</p>
-                    <a class="btn" href="http://wp-lhp5-clouvel.manusien-ecolelamanu.fr/" target="_blank">Allez sur le site</a>
+                    <p class="copy">Hébergement en cours</p>
+                    <a class="btn" href="www.swordshop.celinelouvel.fr">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
@@ -177,10 +179,12 @@
 
         <h2 class="text-light pt-5 titleh2">contactez-moi</h2>
 
-        <div class="text-light textIntro pt-5">
+        <!-- <div class="text-light textIntro pt-5">
             <p>Si vous êtes intéressé par mon profil n'hésitez pas à me contacter par mail : </p>
             <p class="d-flex justify-content-center"><a href="mailto:celine.louvel.76@outlook.fr"><img src="assets/img/e-mail.svg" alt="mail" class="logoMail" title="cliquez pour m'nvoyer un mail"></a></p>
-        </div>
+        </div> -->
+
+
 
     </div>
 
