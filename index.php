@@ -1,10 +1,14 @@
+<?php
+require_once 'controller/controller_index.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céline Louvel - Portfolio</title>
     <link rel="icon" type="img/svg" href="assets/img/geek.svg">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- bootstrap v5 -->
@@ -21,12 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
-    <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
-    <title>Céline Louvel - Portfolio</title>
+    
 </head>
 
 <body>
@@ -103,7 +103,7 @@
                     <h2 class="title cardTitle">Kansai no Bouken</h2>
                     <p class="copy">Site réalisé pour le passage du titre de développeuse web et web mobile</p>
                     <p class="copy">En cours de construction</p>
-                    <a class="btn" href="http://kansainobouken.celinelouvel.fr/index.php">Allez sur le site</a>
+                    <a class="btn" href="http://kansainobouken.celinelouvel.fr/index.php" target="_blank">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
@@ -111,7 +111,7 @@
                     <h2 class="title cardTitle">Sword Shop</h2>
                     <p class="copy">Site WordPress réalisé en formation</p>
                     <p class="copy">Hébergement en cours</p>
-                    <a class="btn" href="www.swordshop.celinelouvel.fr">Allez sur le site</a>
+                    <a class="btn" href="http://swordshop.celinelouvel.fr" target="_blank">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
@@ -132,21 +132,11 @@
 
     </div>
 
-    <!-- <div class="otherWork mt-5 text-center">
+    <div class="container otherWork mt-5 text-center justify-content-center">
 
-        <h3 class="text-dark">Autres réalisations...</h3>
-
-        <div class="row row-cols-1 row-cols-md-2 g-4" data-masonry='{"percentPosition": true }'>
-            <div class="col">
-                <div class="card bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
-                    <a data-lightbox="galleryPortfolio" href="assets/img/chocolaterie.png" class="card-img-top imgGallery w-100 hover-shadow" alt="site de vente de chocolat">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div> -->
+        <h3 class="galleryTitle mt-5 text-dark">Autres réalisations...</h3>
+    
+    </div>
 
     <div id="skillsAnchor"></div>
 
@@ -184,30 +174,47 @@
             <p class="d-flex justify-content-center"><a href="mailto:celine.louvel.76@outlook.fr"><img src="assets/img/e-mail.svg" alt="mail" class="logoMail" title="cliquez pour m'nvoyer un mail"></a></p>
         </div> -->
 
+        <form action="index.php" method="POST" class="col-10 col-md-6 mx-auto mt-5">
 
+            <div class="mb-3">
+                <label for="mail" name="mail" class="form-label text-light">Adresse mail :</label>
+                <input type="email" class="form-control" id="mail" placeholder="name@gmail.com" value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
+                <div class="text-danger">
+                    <span><?= isset($errorMessages['mail']) ? $errorMessages['mail'] : '' ?></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label text-light">Votre message</label>
+                <textarea class="form-control" id="message" rows="6" name="textContact"><?= isset($_POST['textContact']) ? $_POST['textContact'] : '' ?></textarea>
+                <div class="text-danger">
+                    <span><?= isset($errorMessages['textContact']) ? $errorMessages['textContact'] : '' ?></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit" name="submit">Envoyer</button>
+            </div>
+
+        </form>
 
     </div>
 
     <footer class="bg-light text-center ">
         <p class="text-dark textIntro mt-3">Vous pouvez également faire un tour sur mon github ou bien sur mon compte Linkedin !</p>
-        <div class="container d-flex justify-content-center p-4 mb-4 pb-0">
-            <a href="https://github.com/Celine-chan"><img src="assets/img/github.svg" alt="github" class="logofooter me-5"></a>
-            <a href="https://www.linkedin.com/in/c%C3%A9line-louvel/"><img src="assets/img/linkedin.svg" alt="linkedin" class="logofooter"></a>
-        </div>
 
+        <div class="container d-flex justify-content-center p-4 mb-4 pb-0">
+            <a href="https://github.com/Celine-chan"><img src="../../assets/img/github.svg" alt="github" class="logofooter me-5"></a>
+            <a href="https://www.linkedin.com/in/c%C3%A9line-louvel/"><img src="../../assets/img/linkedin.svg" alt="linkedin" class="logofooter"></a>
+        </div>
         <div class="text-center text-white p-3" style="background-color: black;">
             © 2021 Louvel Céline
         </div>
     </footer>
 
-    <!-- bootstrap v5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
     <!-- js -->
     <script type="text/javascipt" src="assets/js/script.js"></script>
-    <script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
 </body>
 
 </html>
