@@ -296,7 +296,7 @@ body {
     line-height: 1.35;
 }
 
-.btn {
+.btnCard {
     cursor: pointer;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -309,11 +309,11 @@ body {
     border: none;
 }
 
-.btn:hover {
+.btnCard:hover {
     background-color: #0d0d0d;
 }
 
-.btn:focus {
+.btnCard:focus {
     outline: 1px dashed yellow;
     outline-offset: 3px;
 }
@@ -419,11 +419,3 @@ body {
 }
 
 /* -------- works -------- */
-/* .imgGallery{
-    height: 5rem;
-    width: auto;
-} */
-
-/* .backWorks{
-    background-color: black;
-} */

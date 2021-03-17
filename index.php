@@ -5,7 +5,7 @@ require_once 'controller/controller_index.php';
 <html lang="fr">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Céline Louvel - Portfolio</title>
@@ -17,6 +17,8 @@ require_once 'controller/controller_index.php';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,7 +28,7 @@ require_once 'controller/controller_index.php';
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Shippori+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
 
 <body>
@@ -103,7 +105,7 @@ require_once 'controller/controller_index.php';
                     <h2 class="title cardTitle">Kansai no Bouken</h2>
                     <p class="copy">Site réalisé pour le passage du titre de développeuse web et web mobile</p>
                     <p class="copy">En cours de construction</p>
-                    <a class="btn" href="http://kansainobouken.celinelouvel.fr/index.php" target="_blank">Allez sur le site</a>
+                    <a class="btnCard" href="http://kansainobouken.celinelouvel.fr/index.php" target="_blank">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
@@ -111,21 +113,21 @@ require_once 'controller/controller_index.php';
                     <h2 class="title cardTitle">Sword Shop</h2>
                     <p class="copy">Site WordPress réalisé en formation</p>
                     <p class="copy">Hébergement en cours</p>
-                    <a class="btn" href="http://swordshop.celinelouvel.fr" target="_blank">Allez sur le site</a>
+                    <a class="btnCard" href="http://swordshop.celinelouvel.fr" target="_blank">Allez sur le site</a>
                 </div>
             </div>
             <div class="card cardProject">
                 <div class="content">
                     <h2 class="title cardTitle">projet en cours</h2>
                     <p class="copy">Bientôt disponible</p>
-                    <button class="btn">Allez sur le site</button>
+                    <button class="btnCard">Allez sur le site</button>
                 </div>
             </div>
             <div class="card cardProject">
                 <div class="content">
                     <h2 class="title cardTitle">projet en cours</h2>
                     <p class="copy">Bientôt disponible</p>
-                    <button class="btn">Allez sur le site</button>
+                    <button class="btnCard">Allez sur le site</button>
                 </div>
             </div>
         </main>
@@ -134,8 +136,9 @@ require_once 'controller/controller_index.php';
 
     <div class="container otherWork mt-5 text-center justify-content-center">
 
-        <h3 class="galleryTitle mt-5 text-dark">Autres réalisations...</h3>
-    
+        <h3 class="galleryTitle mt-5 text-dark titleh2">Autres réalisations...</h3>
+        <p>Pour voir mes autres travaux réalisés lors de ma formation développeuse web et web mobile</p>
+        <a type="button" class="btn btn-danger mt-3" href="view/works.php">Mes réalisations</a>
     </div>
 
     <div id="skillsAnchor"></div>
@@ -212,8 +215,8 @@ require_once 'controller/controller_index.php';
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
-    <!-- js -->
-    <script type="text/javascipt" src="assets/js/script.js"></script>
+    <!-- bootstrap v5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </body>
 
