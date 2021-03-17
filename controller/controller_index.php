@@ -23,4 +23,10 @@ if (isset($_POST['submit'])) {
             $errorMessages['textContact'] = 'Veuillez remplir le champ.';
         }
     }
+
+    $errors = [];
+    $message = $_POST['textContact'];
+    $headers = 'FROM: site@local.dev';
+
+    mail('celine.louvel.76@outlook.fr', 'Formulaire de contact', $message, $headers);
 }

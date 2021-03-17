@@ -177,11 +177,11 @@ require_once 'controller/controller_index.php';
             <p class="d-flex justify-content-center"><a href="mailto:celine.louvel.76@outlook.fr"><img src="assets/img/e-mail.svg" alt="mail" class="logoMail" title="cliquez pour m'nvoyer un mail"></a></p>
         </div> -->
 
-        <form action="index.php" method="POST" class="col-10 col-md-6 mx-auto mt-5">
+        <form action="view/postcontact.php" method="POST" class="col-10 col-md-6 mx-auto mt-5">
 
             <div class="mb-3">
                 <label for="mail" name="mail" class="form-label text-light">Adresse mail :</label>
-                <input type="email" class="form-control" id="mail" placeholder="name@gmail.com" value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
+                <input type="email" name="mail" class="form-control" id="mail" placeholder="name@gmail.com" value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
                 <div class="text-danger">
                     <span><?= isset($errorMessages['mail']) ? $errorMessages['mail'] : '' ?></span>
                 </div>
